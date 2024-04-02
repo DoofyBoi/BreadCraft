@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3sgovt7hlsbt"]
+
+[ext_resource type="PackedScene" uid="uid://b7fk2jbmvnb6r" path="res://Rocco.tscn" id="1_2revn"]
+[ext_resource type="ArrayMesh" uid="uid://bg473nkk56fo5" path="res://Terrain.obj" id="2_u8thj"]
+[ext_resource type="ArrayMesh" uid="uid://cbjbqu6gd606n" path="res://treePine.obj" id="3_lv5ac"]
+[ext_resource type="ArrayMesh" uid="uid://c5u6asubklf7t" path="res://rocks.obj" id="4_0twil"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Rocks" parent="." instance=ExtResource("1_2revn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.39976, -0.024147, 5.49946)
+
+[node name="Terrain" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1073, -1.21972, 6.39759)
+mesh = ExtResource("2_u8thj")
+
+[node name="TreePine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.211635, 0, 1.36029)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.44055, 0, 6.79725)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.85744, -0.0265198, 3.24121)
+mesh = ExtResource("3_lv5ac")
+
+[node name="Rocks2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.595576, 0, 5.58004)
+mesh = ExtResource("4_0twil")
+
+[node name="TreePine4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.28571, 0, 8.10216)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8078, 0, 4.57266)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.72991, 0, 5.12676)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5362, 0, 8.64381)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.48185, 0, 8.42743)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.210433, 0, 9.49833)
+mesh = ExtResource("3_lv5ac")
+
+[node name="TreePine10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.63471, 0, 5.96666)
+mesh = ExtResource("3_lv5ac")
+
+[node name="Rocks3" parent="." instance=ExtResource("1_2revn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.7317, 0, 4.00889)
+
+[node name="Rocks4" parent="." instance=ExtResource("1_2revn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.962861, 3.64644, 79.6513)
+
+[node name="Terrain2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.85176, -1.91436, 42.0474)
+mesh = ExtResource("2_u8thj")
