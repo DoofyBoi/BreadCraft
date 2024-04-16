@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdcny5u358o22"]
+
+[ext_resource type="Script" path="res://CharacterBody3D.gd" id="1_wj0qp"]
+[ext_resource type="Script" path="res://SpringArm3D.gd" id="2_kdwgh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_krh73"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ufqao"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_wj0qp")
+SPEED = 5.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_krh73")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D"]
+mesh = SubResource("CapsuleMesh_ufqao")
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="SpringArm3D" type="SpringArm3D" parent="Node3D"]
+transform = Transform3D(0.976306, -0.0446319, -0.211744, 0.040793, 0.998915, -0.022466, 0.212517, 0.013296, 0.977067, 0, 0, 0)
+spring_length = 3.0
+script = ExtResource("2_kdwgh")
+
+[node name="Camera3D" type="Camera3D" parent="Node3D/SpringArm3D"]
+transform = Transform3D(0.999315, 0.0354401, -0.0106272, -0.0367143, 0.985407, -0.166206, 0.00458173, 0.166482, 0.986034, -0.0695895, 0.212156, -0.0615596)
